@@ -5,42 +5,32 @@
     background-color: red;
     color: aliceblue;
     height: 20vh;
+    border-radius: 20px;
 }
 
 .menu-container{
     display: flex;
-    justify-content:flex-start;
+    justify-content:center;
     align-items: center;
+    height: 7vh;
     background-color: grey;
     list-style-type: none;
     border-radius: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
     filter: drop-shadow(0px 0px 4px black);
     ul{
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        /* background-color: rgb(23, 171, 87); */
         list-style-type: none;
         li{
-            padding-right: 24px;
+            padding-right: 3%;
         }
     }
-
 }
 
-// .menu-container ul{
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-//     /* background-color: rgb(23, 171, 87); */
-//     list-style-type: none;
-// }
-
-// .menu-container ul li{
-//     padding-right: 24px;
-// }
-
 .logo{
-    width: 65%;
-    height: 65%;
+    width: 7%;
+    // height: 10%;
 }
