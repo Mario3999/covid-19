@@ -8,7 +8,7 @@ import GlobalContainer from '../GlobalContainer/GlobalContainer'
 
 const DashContainer = () => {
 
-  const [cases, setCases] = useState();
+  const [cases, setCases] = useState([]);
 
   const fetchCases = async () =>{
     const cases = await axios.get('https://covid-api.mmediagroup.fr/v1/cases');
@@ -26,8 +26,9 @@ const DashContainer = () => {
   return (
     <div className={styles['DashContainer']}>
       <GlobalContainer cases={cases}/>
-      {/* {cases.map((case)=>(
-
+      {/* Prima TRASFORMALO IN ARRAY, POI MAPPI SU QUELLO! */}
+      {/* {cases.data.map((dungo)=>(
+        console.log(dungo)
       ))} */}
       <DashItem cases={cases}/>
       <DashItem cases={cases}/>
