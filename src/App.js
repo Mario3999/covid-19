@@ -1,13 +1,18 @@
 import './App.scss';
-import Header from './components/Header/Header';
-import DashContainer from './components/DashContainer/DashContainer';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './components/Home/Home';
+import StateDetails from './components/StateDetails/StateDetails';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <DashContainer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/:id' element={<StateDetails/>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
