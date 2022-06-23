@@ -4,6 +4,7 @@ import DashItem from '../DashItem/DashItem'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import GlobalContainer from '../GlobalContainer/GlobalContainer'
+import { Link } from 'react-router-dom'
 
 
 const DashContainer = () => {
@@ -11,7 +12,8 @@ const DashContainer = () => {
   const [cases, setCases] = useState();
 
   const fetchCases = async () =>{
-    const cases = await axios.get('https://covid-api.mmediagroup.fr/v1/cases');
+    // const cases = await axios.get('https://covid-api.mmediagroup.fr/v1/cases');
+    const cases = await axios.get('https://api.covidtracking.com/v1/states/current.json');
     console.log(cases);
     setCases(cases);
   }
@@ -26,9 +28,16 @@ const DashContainer = () => {
   return (
     <div className={styles['DashContainer']}>
       <GlobalContainer cases={cases}/>
-      {Object.entries(cases.data).map(key=>{
+      {console.log(Object.entries(cases.data))}
+      {/* {Object.entries(cases.data).map(key=>{
         return <DashItem key={key[0]} title={key[0]} deaths={key[1].All.deaths} />
-      })}
+      })} */}
+      {Object.entries(cases.data).map(key=>(
+        <Link to={`/${key[1].state}`}>
+          <DashItem key={key[0]} title={key[1].state} deaths={key[1].death} />
+        </Link>
+        // return <DashItem key={key[0]} title={key[1].state} deaths={key[1].death} />
+      ))}
     </div>
   )
 }
