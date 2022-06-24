@@ -33,7 +33,7 @@ const DashContainer = () => {
         return <DashItem key={key[0]} title={key[0]} deaths={key[1].All.deaths} />
       })} */}
       {Object.entries(cases.data).map(key=>(
-        <Link to={`/${key[1].state}`}>
+        <Link to={`/${key[0]}`}>
           <DashItem key={key[0]} title={key[1].state} deaths={key[1].death} />
         </Link>
         // return <DashItem key={key[0]} title={key[1].state} deaths={key[1].death} />
