@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Header.module.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -8,7 +9,9 @@ const Header = () => {
       <img className={styles['logo']} src={process.env.PUBLIC_URL + '/assets/img/COVID-19+icon.png'} alt="Logo" />
       <div className={styles['menu-container']}>
         <ul>
+          <Link to={'/'}>
           <li>Home</li>
+          </Link>
           <li>About</li>
           <li>Contacts</li>
         </ul>
