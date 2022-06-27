@@ -31,8 +31,10 @@ const StateDetails = () => {
   return (
     <div className={styles['container']}>
       <div className={styles['info-container']}>
-        <img src="" alt="StateImg" />
-        <h3>{cases.data[pathname].death}</h3>
+        <img src={process.env.PUBLIC_URL + '/assets/img/Alabama.png'} alt="StateImg" />
+        <h4>Positive:{cases.data[pathname].positive}</h4>
+        <h3>Hospitalized:{cases.data[pathname].hospitalized}</h3>
+        <h2>Deaths:{cases.data[pathname].death}</h2>
       </div>
     </div>
   )
