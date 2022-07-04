@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="App">
       <Header />
-      <DashContainer />
+      {/* <DashContainer /> */}
     </div>
   )
 }
