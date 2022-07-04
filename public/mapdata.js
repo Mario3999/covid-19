@@ -1,49 +1,45 @@
 var simplemaps_usmap_mapdata={
   main_settings: {
-    //General settings
-		width: "600", //or 'responsive'
+   //General settings
+    width: "responsive", //'700' or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
+    border_color: "#ffffff",
     popups: "detect",
     
-		//State defaults
-		state_description: "State description",
+    //State defaults
+    state_description: "State Description",
     state_color: "#88A4BC",
     state_hover_color: "#3B729F",
-    state_url: "https://simplemaps.com",
+    state_url: "",
     border_size: 1.5,
-    border_color: "#ffffff",
     all_states_inactive: "no",
     all_states_zoomable: "no",
     
-		//Location defaults
-		location_description: "Location description",
-    location_color: "#FF0067",
+    //Location defaults
+    location_description: "Add location markers using latitude and longitude!",
+    location_color: "#2041D4",
     location_opacity: 0.8,
     location_hover_opacity: 1,
     location_url: "",
     location_size: 25,
     location_type: "square",
+    location_image_source: "frog.png",
     location_border_color: "#FFFFFF",
     location_border: 2,
     location_hover_border: 2.5,
     all_locations_inactive: "no",
     all_locations_hidden: "no",
     
-		//Label defaults
-		label_color: "#ffffff",
-    label_hover_color: "#ffffff",
+    //Label defaults
+    label_color: "#d5ddec",
+    label_hover_color: "#d5ddec",
     label_size: 22,
     label_font: "Arial",
     hide_labels: "no",
-   
-		//Zoom settings
-		manual_zoom: "yes",
+    hide_eastern_labels: "no",
+    manual_zoom: "no",
     back_image: "no",
-    arrow_box: "no",
-    navigation_size: "40",
-    navigation_color: "#f7f7f7",
-    navigation_border_color: "#636363",
     initial_back: "no",
     initial_zoom: -1,
     initial_zoom_solo: "no",
@@ -53,444 +49,370 @@ var simplemaps_usmap_mapdata={
     zoom_percentage: 0.99,
     zoom_time: 0.5,
     
-		//Popup settings
-		popup_color: "white",
+    //Popup settings
+    popup_color: "white",
     popup_opacity: 0.9,
     popup_shadow: 1,
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
     
-		//Advanced settings
-		div: "map",
+    //Advanced settings
+    div: "map",
     auto_load: "yes",
-    rotate: "0",
-    url_new_tab: "yes",
-    images_directory: "default",
-    import_labels: "no",
+    url_new_tab: "no",
+    images_directory: "/static/lib/simplemaps/map_images/",
     fade_time: 0.1,
-    link_text: "View Website"
+    import_labels: "no",
+    link_text: "View Website",
+    state_image_url: "",
+    state_image_position: "",
+    location_image_url: ""
   },
   state_specific: {
     HI: {
+      color: "#ff6666",
       name: "Hawaii",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      url: "/13",
+      description: "Deaths: 445"
     },
     AK: {
+      url: "/0",
+      color: "#ff6666",
       name: "Alaska",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 305"
     },
     FL: {
+      color: "#990000",
       name: "Florida",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      inactive: "no"
+      url: "/10",
+      description: "Deaths: 32266"
     },
     NH: {
+      color: "#ff6666",
       name: "New Hampshire",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      url: "/33",
+      description: "Deaths: 1184"
     },
     VT: {
+      color: "#ff6666",
       name: "Vermont",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      url: "/51",
+      description: "Deaths: 208"
     },
     ME: {
+      color: "#ff6666",
       name: "Maine",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      url: "/23",
+      description: "Deaths: 706"
     },
     RI: {
+      color: "#ff3333",
       name: "Rhode Island",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      url: "/43",
+      description: "Deaths: 2547"
     },
     NY: {
+      color: "#990000",
       name: "New York",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 39029",
+      url: "/37"
     },
     PA: {
+      color: "#990000",
       name: "Pennsylvania",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 24349",
+      url: "/41"
     },
     NJ: {
+      color: "#990000",
       name: "New Jersey",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 23574",
+      url: "/34"
     },
     DE: {
+      color: "#ff3333",
       name: "Delaware",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 1473",
+      url: "/9"
     },
     MD: {
+      color: "#cc0000",
       name: "Maryland",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 7955",
+      url: "/22"
     },
     VA: {
+      color: "#cc0000",
       name: "Virginia",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 9596",
+      url: "/49"
     },
     WV: {
+      color: "#ff3333",
       name: "West Virginia",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 2325",
+      url: "/54"
     },
     OH: {
+      color: "#990000",
       name: "Ohio",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 17656",
+      url: "/38"
     },
     IN: {
+      color: "#cc0000",
       name: "Indiana",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 12737",
+      url: "/17"
     },
     IL: {
+      color: "#990000",
       name: "Illinois",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 23014",
+      url: "/16"
     },
     CT: {
+      color: "#cc0000",
       name: "Connecticut",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 7704",
+      url: "/7"
     },
     WI: {
+      color: "#cc0000",
       name: "Wisconsin",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 7106",
+      url: "/53"
     },
     NC: {
+      color: "#cc0000",
       name: "North Carolina",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 11502",
+      url: "/30"
     },
     DC: {
+      color: "#ff6666",
       name: "District of Columbia",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 1030",
+      url: "/8"
     },
     MA: {
+      color: "#990000",
       name: "Massachusetts",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 16417",
+      url: "/21"
     },
     TN: {
+      color: "#cc0000",
       name: "Tennessee",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 11543",
+      url: "/46"
     },
     AR: {
+      color: "#ff0000",
       name: "Arkansas",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 5319",
+      url: "/2"
     },
     MO: {
+      color: "#cc0000",
       name: "Missouri",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths:  8161",
+      url: "/26"
     },
     GA: {
+      color: "#990000",
       name: "Georgia",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 17906",
+      url: "/11"
     },
     SC: {
+      color: "#cc0000",
       name: "South Carolina",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 8754",
+      url: "/44"
     },
     KY: {
+      color: "#ff0000",
       name: "Kentucky",
-      description: "default",
-      color: "default",
-      zoomable: "no",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 4819",
+      url: "/19"
     },
     AL: {
+      color: "#cc0000",
       name: "Alabama",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 10148",
+      url: "/1"
     },
     LA: {
+      color: "#cc0000",
       name: "Louisiana",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 9748",
+      url: "/20"
     },
     MS: {
+      color: "#ff0000",
       name: "Mississippi",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 6808",
+      url: "/28"
     },
     IA: {
+      color: "#ff0000",
       name: "Iowa",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 5558",
+      url: "/14"
     },
     MN: {
+      color: "#ff0000",
       name: "Minnesota",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 6550",
+      url: "/25"
     },
     OK: {
+      color: "#ff0000",
       name: "Oklahoma",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 4534",
+      url: "/39"
     },
     TX: {
+      color: "#990000",
       name: "Texas",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 44451",
+      url: "/47"
     },
     NM: {
+      color: "#ff0000",
       name: "New Mexico",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 3808",
+      url: "/35"
     },
     KS: {
+      color: "#ff0000",
       name: "Kansas",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 4812",
+      url: "/18"
     },
     NE: {
+      color: "#ff3333",
       name: "Nebraska",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 2113",
+      url: "/32"
     },
     SD: {
+      color: "#ff3333",
       name: "South Dakota",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 1900",
+      url: "/45"
     },
     ND: {
+      color: "#ff3333",
       name: "North Dakota",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 1478",
+      url: "/31"
     },
     WY: {
+      color: "#ff6666",
       name: "Wyoming",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 682",
+      url: "/55"
     },
     MT: {
+      color: "#ff3333",
       name: "Montana",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 1381",
+      url: "/29"
     },
     CO: {
+      color: "#ff0000",
       name: "Colorado",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 5989",
+      url: "/6"
     },
     UT: {
+      color: "#ff3333",
       name: "Utah",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 1976",
+      url: "/48"
     },
     AZ: {
+      color: "#990000",
       name: "Arizona",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 16328",
+      url: "/4"
     },
     NV: {
+      color: "#ff0000",
       name: "Nevada",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 5037",
+      url: "/36"
     },
     OR: {
+      color: "#ff3333",
       name: "Oregon",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 2296",
+      url: "/40"
     },
     WA: {
+      color: "#ff0000",
       name: "Washington",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 5041",
+      url: "/52"
     },
     CA: {
+      color: "#990000",
       name: "California",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 54124",
+      url: "/5"
     },
     MI: {
+      color: "#990000",
       name: "Michigan",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 16658",
+      url: "/24"
     },
     ID: {
+      color: "#ff3333",
       name: "Idaho",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default"
+      description: "Deaths: 1879",
+      url: "/15"
     },
     GU: {
+      color: "#ff6666",
+      hide: "yes",
       name: "Guam",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      hide: "yes"
+      description: "Deaths: 133",
+      url: "/12"
     },
     VI: {
+      color: "#ff6666",
+      hide: "yes",
       name: "Virgin Islands",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      hide: "yes"
+      description: "Deaths: 25",
+      url: "/50"
     },
     PR: {
+      color: "#ff3333",
+      hide: "yes",
       name: "Puerto Rico",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      hide: "yes"
-    },
-    AS: {
-      name: "American Samoa",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      hide: "yes"
+      description: "Deaths: 2062",
+      url: "/42"
     },
     MP: {
+      color: "#ff6666",
+      hide: "yes",
       name: "Northern Mariana Islands",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      hide: "yes"
-    }
-  },
-  locations: {
-    "0": {
-      name: "New York",
-      lat: 40.71,
-      lng: -74,
-      description: "default",
-      color: "default",
-      url: "default",
-      type: "default",
-      size: "default"
+      description: "Deaths: 2",
+      url: "/27"
     },
-    "1": {
-      name: "Anchorage",
-      lat: 61.2180556,
-      lng: -149.9002778,
-      color: "default",
-      type: "circle"
+    AS: {
+      color: "#ff6666",
+      hide: "yes",
+      name: "American Samoa",
+      description: "Deaths: 0",
+      url: "/3"
     }
   },
+  locations: {},
   labels: {
     NH: {
       parent_id: "NH",
@@ -799,6 +721,70 @@ var simplemaps_usmap_mapdata={
       parent_id: "AS",
       x: "665",
       y: "580"
+    }
+  },
+  legend: {
+    entries: []
+  },
+  regions: {},
+  data: {
+    data: {
+      AK: "305",
+      AL: "10148",
+      AR: "5319",
+      AS: "0",
+      AZ: "16328",
+      CA: "54124",
+      CO: "5989",
+      CT: "7704",
+      DC: "1030",
+      DE: "1473",
+      FL: "32266",
+      GA: "17906",
+      GU: "133",
+      HI: "445",
+      IA: "5558",
+      ID: "1879",
+      IL: "23014",
+      IN: "12737",
+      KS: "4812",
+      KY: "4819",
+      LA: "9748",
+      MA: "16417",
+      MD: "7955",
+      ME: "706",
+      MI: "16658",
+      MN: "6550",
+      MO: "8161",
+      MP: "2",
+      MS: "6808",
+      MT: "1381",
+      NC: "11502",
+      ND: "1478",
+      NE: "2113",
+      NH: "1184",
+      NJ: "23574",
+      NM: "3808",
+      NV: "5037",
+      NY: "39029",
+      OH: "17656",
+      OK: "4534",
+      OR: "2296",
+      PA: "24349",
+      PR: "2062",
+      RI: "2547",
+      SC: "8754",
+      SD: "1900",
+      TN: "11543",
+      TX: "44451",
+      UT: "1976",
+      VA: "9596",
+      VI: "25",
+      VT: "208",
+      WA: "5041",
+      WI: "7106",
+      WV: "2325",
+      WY: "682"
     }
   }
 };
