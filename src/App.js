@@ -12,7 +12,7 @@ function App() {
           <Route path='/' element={<Home/>} />
           <Route path='/:id' element={<StateDetails/>} />
         </Routes>
-        <div id="map"></div>
+        {/* <div id="map"></div> */}
         {/* <DashContainer /> */}
       </div>
     </Router>
