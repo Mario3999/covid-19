@@ -2,17 +2,17 @@ var simplemaps_usmap_mapdata={
   main_settings: {
    //General settings
     width: "responsive", //'700' or 'responsive'
-    background_color: "#FFFFFF",
-    background_transparent: "yes",
+    background_color: "lightskyblue",
+    background_transparent: "no",
     border_color: "#ffffff",
     popups: "detect",
     
     //State defaults
     state_description: "State Description",
     state_color: "#88A4BC",
-    state_hover_color: "#3B729F",
+    state_hover_color: "off",
     state_url: "",
-    border_size: 1.5,
+    border_size: "1.5",
     all_states_inactive: "no",
     all_states_zoomable: "no",
     
@@ -67,13 +67,15 @@ var simplemaps_usmap_mapdata={
     link_text: "View Website",
     state_image_url: "",
     state_image_position: "",
-    location_image_url: ""
+    location_image_url: "",
+    border_hover_color: "gray",
+    border_hover_size: "4"
   },
   state_specific: {
     HI: {
       color: "#ff6666",
-      name: "Hawaii",
       url: "/13",
+      name: "Hawaii",
       description: "Deaths: 445"
     },
     AK: {
@@ -84,332 +86,332 @@ var simplemaps_usmap_mapdata={
     },
     FL: {
       color: "#990000",
-      name: "Florida",
       url: "/10",
+      name: "Florida",
       description: "Deaths: 32266"
     },
     NH: {
       color: "#ff6666",
-      name: "New Hampshire",
       url: "/33",
+      name: "New Hampshire",
       description: "Deaths: 1184"
     },
     VT: {
       color: "#ff6666",
-      name: "Vermont",
       url: "/51",
+      name: "Vermont",
       description: "Deaths: 208"
     },
     ME: {
       color: "#ff6666",
-      name: "Maine",
       url: "/23",
+      name: "Maine",
       description: "Deaths: 706"
     },
     RI: {
       color: "#ff3333",
-      name: "Rhode Island",
       url: "/43",
+      name: "Rhode Island",
       description: "Deaths: 2547"
     },
     NY: {
       color: "#990000",
+      url: "/37",
       name: "New York",
-      description: "Deaths: 39029",
-      url: "/37"
+      description: "Deaths: 39029"
     },
     PA: {
       color: "#990000",
+      url: "/41",
       name: "Pennsylvania",
-      description: "Deaths: 24349",
-      url: "/41"
+      description: "Deaths: 24349"
     },
     NJ: {
       color: "#990000",
+      url: "/34",
       name: "New Jersey",
-      description: "Deaths: 23574",
-      url: "/34"
+      description: "Deaths: 23574"
     },
     DE: {
       color: "#ff3333",
+      url: "/9",
       name: "Delaware",
-      description: "Deaths: 1473",
-      url: "/9"
+      description: "Deaths: 1473"
     },
     MD: {
       color: "#cc0000",
+      url: "/22",
       name: "Maryland",
-      description: "Deaths: 7955",
-      url: "/22"
+      description: "Deaths: 7955"
     },
     VA: {
       color: "#cc0000",
+      url: "/49",
       name: "Virginia",
-      description: "Deaths: 9596",
-      url: "/49"
+      description: "Deaths: 9596"
     },
     WV: {
       color: "#ff3333",
+      url: "/54",
       name: "West Virginia",
-      description: "Deaths: 2325",
-      url: "/54"
+      description: "Deaths: 2325"
     },
     OH: {
       color: "#990000",
+      url: "/38",
       name: "Ohio",
-      description: "Deaths: 17656",
-      url: "/38"
+      description: "Deaths: 17656"
     },
     IN: {
       color: "#cc0000",
+      url: "/17",
       name: "Indiana",
-      description: "Deaths: 12737",
-      url: "/17"
+      description: "Deaths: 12737"
     },
     IL: {
       color: "#990000",
+      url: "/16",
       name: "Illinois",
-      description: "Deaths: 23014",
-      url: "/16"
+      description: "Deaths: 23014"
     },
     CT: {
       color: "#cc0000",
+      url: "/7",
       name: "Connecticut",
-      description: "Deaths: 7704",
-      url: "/7"
+      description: "Deaths: 7704"
     },
     WI: {
       color: "#cc0000",
+      url: "/53",
       name: "Wisconsin",
-      description: "Deaths: 7106",
-      url: "/53"
+      description: "Deaths: 7106"
     },
     NC: {
       color: "#cc0000",
+      url: "/30",
       name: "North Carolina",
-      description: "Deaths: 11502",
-      url: "/30"
+      description: "Deaths: 11502"
     },
     DC: {
       color: "#ff6666",
+      url: "/8",
       name: "District of Columbia",
-      description: "Deaths: 1030",
-      url: "/8"
+      description: "Deaths: 1030"
     },
     MA: {
       color: "#990000",
+      url: "/21",
       name: "Massachusetts",
-      description: "Deaths: 16417",
-      url: "/21"
+      description: "Deaths: 16417"
     },
     TN: {
       color: "#cc0000",
+      url: "/46",
       name: "Tennessee",
-      description: "Deaths: 11543",
-      url: "/46"
+      description: "Deaths: 11543"
     },
     AR: {
       color: "#ff0000",
+      url: "/2",
       name: "Arkansas",
-      description: "Deaths: 5319",
-      url: "/2"
+      description: "Deaths: 5319"
     },
     MO: {
       color: "#cc0000",
+      url: "/26",
       name: "Missouri",
-      description: "Deaths:  8161",
-      url: "/26"
+      description: "Deaths:  8161"
     },
     GA: {
       color: "#990000",
+      url: "/11",
       name: "Georgia",
-      description: "Deaths: 17906",
-      url: "/11"
+      description: "Deaths: 17906"
     },
     SC: {
       color: "#cc0000",
+      url: "/44",
       name: "South Carolina",
-      description: "Deaths: 8754",
-      url: "/44"
+      description: "Deaths: 8754"
     },
     KY: {
       color: "#ff0000",
+      url: "/19",
       name: "Kentucky",
-      description: "Deaths: 4819",
-      url: "/19"
+      description: "Deaths: 4819"
     },
     AL: {
       color: "#cc0000",
+      url: "/1",
       name: "Alabama",
-      description: "Deaths: 10148",
-      url: "/1"
+      description: "Deaths: 10148"
     },
     LA: {
       color: "#cc0000",
+      url: "/20",
       name: "Louisiana",
-      description: "Deaths: 9748",
-      url: "/20"
+      description: "Deaths: 9748"
     },
     MS: {
       color: "#ff0000",
+      url: "/28",
       name: "Mississippi",
-      description: "Deaths: 6808",
-      url: "/28"
+      description: "Deaths: 6808"
     },
     IA: {
       color: "#ff0000",
+      url: "/14",
       name: "Iowa",
-      description: "Deaths: 5558",
-      url: "/14"
+      description: "Deaths: 5558"
     },
     MN: {
       color: "#ff0000",
+      url: "/25",
       name: "Minnesota",
-      description: "Deaths: 6550",
-      url: "/25"
+      description: "Deaths: 6550"
     },
     OK: {
       color: "#ff0000",
+      url: "/39",
       name: "Oklahoma",
-      description: "Deaths: 4534",
-      url: "/39"
+      description: "Deaths: 4534"
     },
     TX: {
       color: "#990000",
+      url: "/47",
       name: "Texas",
-      description: "Deaths: 44451",
-      url: "/47"
+      description: "Deaths: 44451"
     },
     NM: {
       color: "#ff0000",
+      url: "/35",
       name: "New Mexico",
-      description: "Deaths: 3808",
-      url: "/35"
+      description: "Deaths: 3808"
     },
     KS: {
       color: "#ff0000",
+      url: "/18",
       name: "Kansas",
-      description: "Deaths: 4812",
-      url: "/18"
+      description: "Deaths: 4812"
     },
     NE: {
       color: "#ff3333",
+      url: "/32",
       name: "Nebraska",
-      description: "Deaths: 2113",
-      url: "/32"
+      description: "Deaths: 2113"
     },
     SD: {
       color: "#ff3333",
+      url: "/45",
       name: "South Dakota",
-      description: "Deaths: 1900",
-      url: "/45"
+      description: "Deaths: 1900"
     },
     ND: {
       color: "#ff3333",
+      url: "/31",
       name: "North Dakota",
-      description: "Deaths: 1478",
-      url: "/31"
+      description: "Deaths: 1478"
     },
     WY: {
       color: "#ff6666",
+      url: "/55",
       name: "Wyoming",
-      description: "Deaths: 682",
-      url: "/55"
+      description: "Deaths: 682"
     },
     MT: {
       color: "#ff3333",
+      url: "/29",
       name: "Montana",
-      description: "Deaths: 1381",
-      url: "/29"
+      description: "Deaths: 1381"
     },
     CO: {
       color: "#ff0000",
+      url: "/6",
       name: "Colorado",
-      description: "Deaths: 5989",
-      url: "/6"
+      description: "Deaths: 5989"
     },
     UT: {
       color: "#ff3333",
+      url: "/48",
       name: "Utah",
-      description: "Deaths: 1976",
-      url: "/48"
+      description: "Deaths: 1976"
     },
     AZ: {
       color: "#990000",
+      url: "/4",
       name: "Arizona",
-      description: "Deaths: 16328",
-      url: "/4"
+      description: "Deaths: 16328"
     },
     NV: {
       color: "#ff0000",
+      url: "/36",
       name: "Nevada",
-      description: "Deaths: 5037",
-      url: "/36"
+      description: "Deaths: 5037"
     },
     OR: {
       color: "#ff3333",
+      url: "/40",
       name: "Oregon",
-      description: "Deaths: 2296",
-      url: "/40"
+      description: "Deaths: 2296"
     },
     WA: {
       color: "#ff0000",
+      url: "/52",
       name: "Washington",
-      description: "Deaths: 5041",
-      url: "/52"
+      description: "Deaths: 5041"
     },
     CA: {
       color: "#990000",
+      url: "/5",
       name: "California",
-      description: "Deaths: 54124",
-      url: "/5"
+      description: "Deaths: 54124"
     },
     MI: {
       color: "#990000",
+      url: "/24",
       name: "Michigan",
-      description: "Deaths: 16658",
-      url: "/24"
+      description: "Deaths: 16658"
     },
     ID: {
       color: "#ff3333",
+      url: "/15",
       name: "Idaho",
-      description: "Deaths: 1879",
-      url: "/15"
+      description: "Deaths: 1879"
     },
     GU: {
       color: "#ff6666",
+      url: "/12",
       hide: "yes",
       name: "Guam",
-      description: "Deaths: 133",
-      url: "/12"
+      description: "Deaths: 133"
     },
     VI: {
       color: "#ff6666",
+      url: "/50",
       hide: "yes",
       name: "Virgin Islands",
-      description: "Deaths: 25",
-      url: "/50"
+      description: "Deaths: 25"
     },
     PR: {
       color: "#ff3333",
+      url: "/42",
       hide: "yes",
       name: "Puerto Rico",
-      description: "Deaths: 2062",
-      url: "/42"
+      description: "Deaths: 2062"
     },
     MP: {
       color: "#ff6666",
+      url: "/27",
       hide: "yes",
       name: "Northern Mariana Islands",
-      description: "Deaths: 2",
-      url: "/27"
+      description: "Deaths: 2"
     },
     AS: {
       color: "#ff6666",
+      url: "/3",
       hide: "yes",
       name: "American Samoa",
-      description: "Deaths: 0",
-      url: "/3"
+      description: "Deaths: 0"
     }
   },
   locations: {},
