@@ -24,6 +24,9 @@ const StateDetails = () => {
       alert(error)
     }
   }
+
+  // console.log(states.HI.name)
+
   
   if(!cases){
     return <div>Loading</div>
