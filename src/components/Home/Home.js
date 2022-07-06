@@ -6,7 +6,6 @@ const Home = () => {
     <div className="App">
       <Header />
       <div id='map'></div>
-      {/* <DashContainer /> */}
     </div>
   )
 }
