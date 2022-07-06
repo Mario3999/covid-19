@@ -5,14 +5,16 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <div className={styles['header-container']}>
-      <h1>Covid-19</h1>
+      <h1>Covid-19 U.S.</h1>
       <img className={styles['logo']} src={process.env.PUBLIC_URL + '/assets/img/COVID-19+icon.png'} alt="Logo" />
       <div className={styles['menu-container']}>
         <ul>
           <Link to={'/'}>
           <li>Home</li>
           </Link>
+          <Link to={'/About'}>
           <li>About</li>
+          </Link>
           <li>Contacts</li>
         </ul>
       </div>
