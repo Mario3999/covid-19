@@ -32,9 +32,18 @@ const StateDetails = () => {
     <div className={styles['container']}>
       <div className={styles['info-container']}>
         <img src={process.env.PUBLIC_URL + `/assets/img/states/${pathname}.png`} alt="StateImg" />
-        <h4>Positive:{cases.data[pathname].positive}</h4>
-        <h3>Hospitalized:{cases.data[pathname].hospitalized}</h3>
-        <h2>Deaths:{cases.data[pathname].death}</h2>
+        <div className={styles['positive']}>
+          <img src={process.env.PUBLIC_URL + `/assets/img/positive.png`} alt="" />
+          <h3>Positive:{cases.data[pathname].positive}</h3>
+        </div>
+        <div className={styles['hospitalized']}>
+          <img src={process.env.PUBLIC_URL + `/assets/img/hospitalized.png`} alt="" />
+          <h3>Hospitalized:{cases.data[pathname].hospitalized}</h3>
+        </div>
+        <div className={styles['deaths']}>
+          <img src={process.env.PUBLIC_URL + `/assets/img/deaths.png`} alt="" />
+          <h3>Deaths:{cases.data[pathname].death}</h3>
+        </div>
       </div>
     </div>
   )
