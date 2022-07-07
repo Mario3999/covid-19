@@ -35,7 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="src/assets/img/Veggie.png" alt="" width="" height=""></img>
+<img src="public/assets/img/covid-19.png" alt="" width="" height=""></img>
 
 "Covid-19" è una app che permette di visualizzare le informazioni relative al virus negli Stati Uniti, contattando le API all'indirizzo https://covidtracking.com/data/api e utilizzando le mappe di SimpleMaps .
 
