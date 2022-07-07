@@ -17,7 +17,6 @@ const StateDetails = () => {
   const fetchCases = async () => {
     try{
       const response = await axios.get(`https://api.covidtracking.com/v1/states/current.json`)
-      // console.log(response)
       setCases(response)
     }
     catch(error){
@@ -25,12 +24,10 @@ const StateDetails = () => {
     }
   }
 
-  // console.log(states.HI.name)
-
-  
   if(!cases){
     return <div>Loading</div>
   }
+
   return (
     <div className={styles['container']}>
       <div className={styles['info-container']}>
