@@ -8,7 +8,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Mario3999/covid-19">
-    <img src="public/assets/img/positive.png" alt="Logo" width="200" height="200">
+    <img src="public/assets/img/positive.png" alt="Logo" width="150" height="150">
   </a>
 
 </div>
