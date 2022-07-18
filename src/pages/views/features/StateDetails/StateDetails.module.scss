@@ -85,13 +85,62 @@
         align-items: center;
         width: 40%;
         img{
-            width: 10vw;
+            width: 30vw;
         }
     }
 }
 
 // Tablet
-@media only screen and (min-width: 401px) and (max-width: 960px) {}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: lightskyblue;
+    }
+    
+    .info-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 95vw;
+        height: 70vh;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 8px black);
+        background-color: white;
+        img{
+            width: 80%;
+            height: 40%;
+            border-radius: 20px;
+        }
+        h3{
+            // color: whitesmoke;
+            padding: 5px;
+            background-color: lightgray;
+            border-radius: 5px;
+            height: 5vh;
+            filter: drop-shadow(0px 0px 4px black);
+        }
+    }
+    
+    .positive, .hospitalized, .deaths{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        img{
+            width: 9vw;
+            height: 7vh;
+        }
+    }
+}
+
 
 // Desktop
-@media only screen and (min-width: 961px) {}
+@media only screen and (min-width: 961px) {
+
+}
