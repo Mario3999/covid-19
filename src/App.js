@@ -1,7 +1,7 @@
 import './App.scss';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './components/Home/Home';
-import StateDetails from './components/StateDetails/StateDetails';
+import Home from './pages/views/features/Home/Home';
+import StateDetails from './pages/views/features/StateDetails/StateDetails';
 
 function App() {
   return (
